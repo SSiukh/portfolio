@@ -1,12 +1,16 @@
-function App() {
-  const [count, setCount] = useState(0);
+import React, { useState } from "react";
+import styles from "./App.module.css";
+import Header from "./components/Header/Header";
+import Decorative from "./components/Decorative/Decorative";
+import Hero from "./components/Hero/Hero";
 
+function App() {
   return (
-    <>
-      <button onClick={() => setCount((count) => count + 1)}>
-        count is {count}
-      </button>
-    </>
+    <div className={styles.App}>
+      <Decorative />
+      <Header />
+      <Hero />
+    </div>
   );
 }
 

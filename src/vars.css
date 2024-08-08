@@ -1,0 +1,20 @@
+:root {
+  /* Colors */
+  --color-text: #fff;
+  --color-primary: #576cbc;
+  --color-secondary: #19376d;
+  --color-dark: #0b2447;
+  --color-bg: hsl(215, 84%, 10%);
+  --color-light: #b1c9ef;
+  /* palitra */
+  --color-first: #213a57;
+  --color-second: #0b6477;
+  --color-third: #14919b;
+  --color-fourth: #0ad1c8;
+  --color-five: #45dfb1;
+  --color-six: #80ed99;
+
+  /* fonts */
+  --font-family: "Outfit", sans-serif;
+  --second-family: "Roboto", sans-serif;
+}

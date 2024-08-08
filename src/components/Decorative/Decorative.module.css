@@ -1,0 +1,23 @@
+@import "../../vars.css";
+
+.decorativeFirst {
+  width: 748px;
+  height: 746px;
+  position: absolute;
+  top: -328px;
+  left: -404px;
+  border-radius: 100%;
+  background-color: var(--color-secondary);
+  filter: blur(200px);
+}
+
+.decorativeSecond {
+  border-radius: 100%;
+  background-color: var(--color-secondary);
+  filter: blur(200px);
+  position: absolute;
+  width: 940px;
+  height: 764px;
+  left: 908px;
+  top: 216px;
+}

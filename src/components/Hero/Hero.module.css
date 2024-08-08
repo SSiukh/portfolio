@@ -1,0 +1,87 @@
+@import "../../vars.css";
+
+.heroContainer {
+  margin-top: 100px;
+  display: flex;
+  gap: 70px;
+}
+
+.heroImageContainer {
+  width: 420px;
+  height: 420px;
+  background-color: var(--color-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  animation: moveUpDown 4s ease-in-out infinite;
+  background-image: linear-gradient(rgba(4, 22, 47, 0.3), rgba(4, 22, 47, 0.3)),
+    url(../../assets/avat.png);
+  background-size: cover;
+  border: 2px solid var(--color-primary);
+  transition: bacground-image 250ms linear;
+}
+
+.heroImageContainer:hover,
+.heroImageContainer:focus {
+  background-image: linear-gradient(
+      rgba(11, 36, 71, 0.3),
+      rgba(11, 36, 71, 0.3)
+    ),
+    url(../../assets/avat.png);
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.heroInfoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 42px;
+  flex-grow: 1;
+}
+
+.heroTitle {
+  font-weight: 800;
+  font-size: 72px;
+  font-family: var(--second-family);
+}
+
+.heroText {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.heroButton {
+  padding: 18px 26px;
+  border: none;
+  border-radius: 100px;
+  color: var(--color-text);
+  background-color: #576cbc;
+  font-weight: 600;
+  font-size: 30px;
+  font-family: var(--font-family);
+  transition: background-color 250ms linear;
+  cursor: pointer;
+}
+
+.heroButton:hover,
+.heroButton:focus {
+  background-color: var(--color-secondary);
+}

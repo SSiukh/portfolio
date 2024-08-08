@@ -1,0 +1,79 @@
+@import "../../vars.css";
+
+.header {
+  position: relative;
+  display: flex;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.navList {
+  display: flex;
+  gap: 47px;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 30px;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 429px;
+  transition: transform 250ms linear, color 250ms linear;
+}
+
+.logo:hover {
+  transform: translateY(-3px);
+  color: var(--color-light);
+}
+
+.logoFirstSpan {
+  transition: color 250ms linear;
+}
+
+.logoSecondSpan {
+  transition: color 250ms linear;
+}
+
+.logoSecondSpan:hover {
+  color: var(--color-primary);
+}
+.logoFirstSpan:hover {
+  color: var(--color-primary);
+}
+
+.navListItem {
+  display: block;
+  font-weight: 500;
+  font-size: 25px;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 10px;
+  cursor: pointer;
+  transition: color 250ms linear, transform 250ms linear;
+}
+
+.navListItem::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  background-color: var(--color-light);
+  bottom: 0;
+  left: 0;
+  height: 5px;
+  border-radius: 5px;
+  transform: translateX(-101%);
+  transition: transform 250ms linear;
+}
+
+.navListItem:hover {
+  transform: translateY(-3px);
+  color: var(--color-light);
+}
+
+.navListItem:hover::after {
+  transform: translateX(0);
+}
