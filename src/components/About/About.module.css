@@ -1,0 +1,31 @@
+@import "../../vars.css";
+
+.aboutSection {
+  margin: 0 auto;
+  width: 1211px;
+  background-color: var(--color-black);
+  border-radius: 15px;
+  position: relative;
+  z-index: 100;
+  padding-top: 55px;
+}
+.aboutTitle {
+  font-weight: 700;
+  font-size: 35px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #fff;
+}
+.aboutContainer {
+  margin-top: 79px;
+  padding-left: 60px;
+}
+
+.aboutImg {
+  transition: transform 250ms linear;
+}
+
+.aboutImg:hover,
+.aboutImg:focus {
+  transform: translateY(-20px);
+}

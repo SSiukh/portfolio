@@ -3,6 +3,7 @@ import styles from "./App.module.css";
 import Header from "./components/Header/Header";
 import Decorative from "./components/Decorative/Decorative";
 import Hero from "./components/Hero/Hero";
+import About from "./components/About/About";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Decorative />
       <Header />
       <Hero />
+      <About />
     </div>
   );
 }

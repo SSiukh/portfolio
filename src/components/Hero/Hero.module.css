@@ -21,7 +21,7 @@
     url(../../assets/avat.png);
   background-size: cover;
   border: 2px solid var(--color-primary);
-  transition: bacground-image 250ms linear;
+  transition: background-image 250ms linear, animation 250ms linear;
 }
 
 .heroImageContainer:hover,
@@ -31,6 +31,7 @@
       rgba(11, 36, 71, 0.3)
     ),
     url(../../assets/avat.png);
+  animation: none;
 }
 
 @keyframes moveUpDown {
@@ -79,6 +80,7 @@
   font-family: var(--font-family);
   transition: background-color 250ms linear;
   cursor: pointer;
+  margin-bottom: 129px;
 }
 
 .heroButton:hover,
