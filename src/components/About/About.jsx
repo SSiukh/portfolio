@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./About.module.css";
 import img from "../../assets/about-img.png";
-import icons from "../../assets/icons.svg";
+import icons from "/src/assets/icons.svg";
 
 function About() {
   return (
