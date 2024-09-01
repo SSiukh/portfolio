@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./About.module.css";
 import img from "../../assets/about-img.png";
-import icons from "/src/assets/icons.svg";
+import icons from "../../assets/icons.svg";
 
 function About() {
   return (
@@ -34,7 +34,7 @@ function About() {
               </svg>
               <div className={styles.aboutItemsConatiner}>
                 <h3 className={styles.aboutItemsTitle}>
-                  Computer Science bachelor
+                  Computer-Science bachelor
                 </h3>
                 <p className={styles.aboutItemsText}>
                   I`m studying full-time on a budget basis. I completed
