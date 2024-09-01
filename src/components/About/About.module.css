@@ -2,12 +2,13 @@
 
 .aboutSection {
   margin: 0 auto;
-  width: 1211px;
+  max-width: 1211px;
   background-color: var(--color-black);
   border-radius: 15px;
   position: relative;
-  z-index: 100;
   padding-top: 55px;
+  padding-bottom: 75px;
+  height: auto;
 }
 .aboutTitle {
   font-weight: 700;
@@ -17,15 +18,57 @@
   color: #fff;
 }
 .aboutContainer {
-  margin-top: 79px;
+  display: flex;
   padding-left: 60px;
 }
 
 .aboutImg {
+  margin-top: 79px;
   transition: transform 250ms linear;
 }
 
 .aboutImg:hover,
 .aboutImg:focus {
   transform: translateY(-20px);
+}
+
+.aboutList {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-left: 95px;
+}
+
+.aboutItems {
+  display: flex;
+  padding: 25px;
+  gap: 14px;
+  align-items: center;
+  border-radius: 20px;
+  transition: background 250ms linear;
+}
+
+.aboutIcon {
+  max-width: 40px;
+  height: 40px;
+  fill: var(--color-primary);
+  transition: fill 250ms linear;
+}
+
+.aboutItems:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(165, 215, 232, 0.2) 0%,
+    rgba(255, 255, 255, 0) 60%
+  );
+}
+
+.aboutItems:hover .aboutIcon {
+  fill: var(--color-light);
+}
+
+.aboutItemsConatiner {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }

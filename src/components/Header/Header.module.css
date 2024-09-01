@@ -1,5 +1,14 @@
 @import "../../vars.css";
 
+HashLink {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .header {
   position: relative;
   display: flex;
