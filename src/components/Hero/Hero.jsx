@@ -18,7 +18,7 @@ function Hero() {
             </button>
           </div>
           <div className={styles.heroImageContainer}>
-            {/* <img src={logo} alt="my logo" width="420" height="420" /> */}
+            <img src={logo} alt="my logo" width="420" height="420" />
           </div>
         </div>
       </div>
