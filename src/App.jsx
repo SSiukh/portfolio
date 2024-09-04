@@ -11,7 +11,7 @@ function App() {
       <Decorative />
       <Header />
       <Hero />
-      <About />
+      <About iconPath="./src/assets/icons.svg#icon-pointer" />
     </div>
   );
 }

@@ -3,14 +3,11 @@ import styles from "./About.module.css";
 import img from "../../assets/about-img.png";
 import icons from "../../assets/icons.svg";
 
-import { ReactComponent as IconPointer } from "../../assets/icons.svg";
-
-function About() {
+function About({ iconPath }) {
   return (
     <section id="about-section" className={styles.aboutSection}>
       <div className="container">
         <h2 className={styles.aboutTitle}>About</h2>
-        <IconPointer />
         <div className={styles.aboutContainer}>
           <img
             src={img}
@@ -21,7 +18,7 @@ function About() {
           <ul className={styles.aboutList}>
             <li className={styles.aboutItems}>
               <svg className={styles.aboutIcon}>
-                <use href={`${icons}#icon-pointer`}></use>
+                <use href={iconPath}></use>
               </svg>
               <div className={styles.aboutItemsConatiner}>
                 <h3 className={styles.aboutItemsTitle}>Frontend Developer</h3>
