@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./About.module.css";
 import img from "../../assets/about-img.png";
-import icons from "./src/assets/icons.svg";
 
 function About({ iconPath }) {
   return (
@@ -18,7 +17,7 @@ function About({ iconPath }) {
           <ul className={styles.aboutList}>
             <li className={styles.aboutItems}>
               <svg className={styles.aboutIcon}>
-                <use href={`${icons}#icon-pointer`}></use>
+                <use href="./src/assets/icons.svg#icon-pointer"></use>
               </svg>
               <div className={styles.aboutItemsConatiner}>
                 <h3 className={styles.aboutItemsTitle}>Frontend Developer</h3>
@@ -30,7 +29,7 @@ function About({ iconPath }) {
             </li>
             <li className={styles.aboutItems}>
               <svg className={styles.aboutIcon}>
-                <use href={`${icons}#icon-database`}></use>
+                <use href="./src/assets/icons.svg#icon-database"></use>
               </svg>
               <div className={styles.aboutItemsConatiner}>
                 <h3 className={styles.aboutItemsTitle}>
@@ -45,7 +44,7 @@ function About({ iconPath }) {
             </li>
             <li className={styles.aboutItems}>
               <svg className={styles.aboutIcon}>
-                <use href={`${icons}#icon-embed2`}></use>
+                <use href="./src/assets/icons.svg#icon-embed2"></use>
               </svg>
               <div className={styles.aboutItemsConatiner}>
                 <h3 className={styles.aboutItemsTitle}>Freelancer</h3>
