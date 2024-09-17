@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./About.module.css";
 import img from "../../assets/about-img.png";
+import svg from "../../../public/vite.svg";
 
 function About({ iconPath }) {
   return (
@@ -17,7 +18,7 @@ function About({ iconPath }) {
           <ul className={styles.aboutList}>
             <li className={styles.aboutItems}>
               <svg className={styles.aboutIcon}>
-                <use href="./src/assets/icons.svg#icon-pointer"></use>
+                <use href={svg}></use>
               </svg>
               <div className={styles.aboutItemsConatiner}>
                 <h3 className={styles.aboutItemsTitle}>Frontend Developer</h3>
